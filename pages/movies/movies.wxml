@@ -1,0 +1,23 @@
+<import src="movie-list/movie-list-template.wxml" />
+<import src="movie-grid/movie-grid-template.wxml"/>
+<view class="search">
+    <icon type="search"  class="search-img" size="13" color="#405f80"/>
+    <input type="text" value="{{inputValue}}"  placeholder="速度与激情8、攻壳机动队" placeholder-class="placeholder" bindconfirm="onBindconfirm" bindfocus="onBindFocus"/>
+    <image wx:if="{{cancelShow}}"src="/images/icon/close21.png" class="xx-img" bindtap="onCancelImgTap"></image>
+    <text  wx:if="{{cancelPanelShow}}" class="cancel" bindtap="onCancel">取消</text>
+</view>
+<view class="container-moive" wx:if="{{containerShow}}">
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...inTheater}}"></template>
+  </view>
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...comingSoon}}"></template>
+  </view>
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...top205}}"></template>
+  </view>
+</view>
+
+<view class="search-panel" wx:if="{{searchPanelShow}}">
+  <template is="movieGridTemplate" data="{{...searchResult}}"></template>
+</view>

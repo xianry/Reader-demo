@@ -1,0 +1,9 @@
+/* pages/address/address.wxss */
+
+.button-hover {
+  background-color: red;
+}
+
+.other-button-hover {
+  background-color: blue;
+}

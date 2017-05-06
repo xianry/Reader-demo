@@ -1,0 +1,13 @@
+<!--pages/address/address.wxml-->
+<button type="primary" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="defaultButton" hover-class="other-button-hover"> 选择收货地址 </button>
+        <button type="warn" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="getUserinfo" hover-class="other-button-hover"> 获取用户信息 </button>
+<button type="primary" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="checkSession" hover-class="other-button-hover"> 检查是否登录 </button>
+
+        <button type="warn" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="openSetting" hover-class="other-button-hover">用户授权 </button>
+
+        <button type="primary" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="getLocation" hover-class="other-button-hover"> 获取地理位置 </button>

@@ -1,0 +1,4 @@
+<!--pages/movies/more-movie/more-movie.wxml-->
+<import src="../movie-grid/movie-grid-template.wxml"/>
+<!--//记得把js 中的数据data出入-->
+<template is="movieGridTemplate"  data="{{movies}}"></template>
